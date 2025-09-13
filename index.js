@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const app = express();
 app.use(express.json());
 
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/inventoryDB';
+const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/jobTrackerDB';
 const PORT = process.env.PORT || 3000;
 
 mongoose.connect(MONGO_URI, {
